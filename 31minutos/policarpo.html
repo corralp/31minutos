@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Policarpo Avendaño</title>
+  <style>
+    body {
+      font-family: 'Arial Black', sans-serif;
+      background: #ffde59;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff3838;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+      text-shadow: 1px 1px 2px black;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 15px;
+      border: 5px solid #222;
+      margin-top: 1rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #ff3838;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover {
+      background-color: #cc2a2a;
+    }
+  </style>
+</head>
+<body>
+  <header>Policarpo Avendaño</header>
+  <main>
+    <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Policarpo_Avenda%C3%B1o.png" alt="Policarpo Avendaño" />
+    <p>Policarpo es el cantante y presentador del Ranking Top. Su estilo excéntrico lo hace inolvidable.</p>
+    <a class="button" href="index.html">← Volver</a>
+  </main>
+
+  <script>
+    document.querySelector("img").addEventListener("click", function() {
+      alert("¡Soy Policarpo y esta es la canción número uno del ranking!");
+    });
+  </script>
+</body>
+</html>

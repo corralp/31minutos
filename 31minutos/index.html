@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>31 Minutos - Personajes</title>
+  <style>
+    body {
+      font-family: 'Arial Black', sans-serif;
+      background: #ffde59;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff3838;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px black;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    .personaje {
+      display: inline-block;
+      margin: 1rem;
+    }
+    .boton {
+      background-color: #ff3838;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .boton:hover {
+      background-color: #cc2a2a;
+    }
+  </style>
+</head>
+<body>
+  <header>¡Bienvenidos a 31 Minutos!</header>
+  <main>
+    <h2>Haz clic en un personaje para ver su página:</h2>
+
+    <div class="personaje">
+      <a class="boton" href="tulio.html" onclick="mostrarMensaje('Tulio Triviño')">Tulio Triviño</a>
+    </div>
+
+    <div class="personaje">
+      <a class="boton" href="bodoque.html" onclick="mostrarMensaje('Juan Carlos Bodoque')">Juan Carlos Bodoque</a>
+    </div>
+
+    <div class="personaje">
+      <a class="boton" href="policarpo.html" onclick="mostrarMensaje('Policarpo Avendaño')">Policarpo Avendaño</a>
+    </div>
+
+    <div class="personaje">
+      <a class="boton" href="mariohugo.html" onclick="mostrarMensaje('Mario Hugo')">Mario Hugo</a>
+    </div>
+  </main>
+
+  <script>
+    function mostrarMensaje(nombre) {
+      alert("Estás entrando a la página de " + nombre + " 🎉");
+    }
+  </script>
+</body>
+</html>

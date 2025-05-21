@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mario Hugo</title>
+  <style>
+    body {
+      font-family: 'Arial Black', sans-serif;
+      background: #ffde59;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff3838;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+      text-shadow: 1px 1px 2px black;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 15px;
+      border: 5px solid #222;
+      margin-top: 1rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #ff3838;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover {
+      background-color: #cc2a2a;
+    }
+  </style>
+</head>
+<body>
+  <header>Mario Hugo</header>
+  <main>
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/71/Mario_Hugo.png" alt="Mario Hugo" />
+    <p>Mario Hugo es un personaje tierno y muy sentimental. Siempre está dispuesto a ver lo bueno de la vida.</p>
+    <a class="button" href="index.html">← Volver</a>
+  </main>
+
+  <script>
+    document.querySelector("img").addEventListener("click", function() {
+      alert("Hola, soy Mario Hugo y te quiero mucho.");
+    });
+  </script>
+</body>
+</html>
